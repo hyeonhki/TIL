@@ -3,19 +3,19 @@
 - [x] %p 구현과정에 있어서의 궁금증
   - void *을 unsigned int 로 받는 것
   - void *? 자료형에 대한 근본적 지식
-- [ ] NULL과 0의 차이
+- [x] NULL과 0의 차이
 - [ ] 재귀함수
 - [ ] ft_bewhat, be_zero에서 void 포인터를 사용한 함수구현
   - 왜 이차원 포인터를 사용하지 않았는데 내용이 바뀌었나?
   - 인덱스를 사용하지 않고 함수를 구현할 시 문제가 생긴 내용
 - [ ] char * 와 char []의 차이
   > https://skyul.tistory.com/28
-- [ ] unsigned long, unsigned int 자료형 byte와 이로인해 생기는 문제
+- [x] unsigned long, unsigned int 자료형 byte와 이로인해 생기는 문제
 - [x] 다중 free 만들기
 - [x] fsanitize 메모리 누수 잡기
 - [ ] heap BOF
 - [x] 문자열의 널, printf, malloc
-- [ ] 댕글링 포인터
+- [x] 댕글링 포인터
 - [ ] write와 printf 교차사용 : stdout
 ___
 ### - 상세 학습 내용
