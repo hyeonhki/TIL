@@ -1,4 +1,4 @@
-지식 전무
+지식 전무한 상황에서 시작했던 ft_server...
 
 ## ft_server
 - 시스템 관리 개념을 소개하기 위한 과제
@@ -6,7 +6,7 @@
 - 추후 ft_service와 이어지는 부분이 있다.
 
 ### ft_server 서브젝트 설명
-- LEMP 스택 : 동적 웹 어플리케이션을 구현하기 위해 피룡한 Linux + Nginx + MySQL + PHP을 모아서 부르는 단어인데 서브젝트에서 이걸 요구한다.
+- LEMP 스택 : 동적 웹 어플리케이션을 구현하기 위해 필요한 Linux + Nginx + MySQL + PHP을 모아서 부르는 단어인데 서브젝트에서 이걸 요구한다.
 - Docker container 안에 __Nginx__ 웹 서버를 설치할 것
 - container의 OS는 __Debian Buster__ 일 것
 - 연동해야할 서비스
@@ -39,7 +39,7 @@ __1.2 이미지__
 
 ### 2. 데비안 (Debian Buster)
 - 우분투와 같은 리눅스 OS 종류 중 하나.(= 서브젝트에서 사용하라 명시)
-- 안정성을 중시하는 OS라 많이 사용한다고 한다.
+- 안정성을 중시하는 OS라 많이 웹 서버 등에 많이 사용한다고 한다.
 
 ### 3. Nginx
 - 엔진엑스는 무료로 제공되는 오픈소스 웹 서버 프로그램
@@ -119,8 +119,9 @@ __1.2 이미지__
      - 패키지 목록을 최신으로 업데이트, 업글이드(apt-get update&upgrade) 후 nginx 설치(apt-get install nginx)
      - service nginx start, service nginx status
      - localhost의 접속 확인
+     - 서버 블록은 지정된 도메인의 포트에서 드러오는 연결을 수신
 <br>
-4. Openssl로 selg-signed SSL 생성
+1. Openssl로 selg-signed SSL 생성
      - https를 위해 필요한 개인키(.key), 서면요청파일(.csr), 인증서파일(.crt)를 openssl로 발급한다.
      - apt-get install openssl
      - ```openssl req -newkey rsa:4096 -days 365 -nodes -x509 -subf "/C..."```
@@ -156,3 +157,7 @@ __1.2 이미지__
 >- https://subicura.com/2017/01/19/docker-guide-for-beginners-1.html (도커란 무엇인가)
 >- https://nirsa.tistory.com/63 (도커파일 개념, 명령어, 이미지빌드)
 >- https://velog.io/@hidaehyunlee/ftserver-%EC%84%A0%ED%96%89%EC%A7%80%EC%8B%9D-Docker-Debian-Buster-Nginx- (hidaehyunlee)
+>- https://earthkingman.tistory.com/108 (하루코딩일기)
+>- https://watermelonlike.tistory.com/115 (수박수님)
+>- https://yeosong1.github.io/ft_server.html (yeosong님)
+>- https://velog.io/@chaewonkang/ftserver-1%EC%9D%BC%EC%B0%A8 (ckang님)
